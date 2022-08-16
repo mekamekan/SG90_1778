@@ -42,6 +42,7 @@
 */
 
 #include "mcc_generated_files/mcc.h"
+#include "SG90.h"
 
 void putch(char data);
 /*
@@ -70,8 +71,7 @@ void main(void)
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
     
-    PWM11_DutyCycleSet(duty);
-    PWM11_LoadBufferSet();
+    SG90_Duty(duty);
 
     while (1)
     {
@@ -86,8 +86,7 @@ void main(void)
         if(flag == 0) duty++;
         if(flag == 1) duty--;
         
-        PWM11_DutyCycleSet(duty);
-        PWM11_LoadBufferSet();
+        SG90_Duty(duty);
         
         printf("\r%u\n",duty);
         

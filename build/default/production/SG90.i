@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "SG90.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "D:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 44 "main.c"
+# 1 "SG90.c" 2
+# 1 "./SG90.h" 1
 # 1 "./mcc_generated_files/mcc.h" 1
 # 49 "./mcc_generated_files/mcc.h"
 # 1 "D:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\\pic\\include\\xc.h" 1 3
@@ -19722,65 +19722,16 @@ void SYSTEM_Initialize(void);
 void OSCILLATOR_Initialize(void);
 # 97 "./mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
-# 44 "main.c" 2
-
-# 1 "./SG90.h" 1
+# 1 "./SG90.h" 2
 
 
 void SG90_Duty(unsigned int duty);
-# 45 "main.c" 2
+# 1 "SG90.c" 2
 
 
-void putch(char data);
+void SG90_Duty(unsigned int duty){
 
-
-
-void main(void)
-{
-
-    unsigned int duty = 1000;
-    int flag;
-
-    SYSTEM_Initialize();
-
-
-
-
-
-    (INTCONbits.GIE = 1);
-
-
-    (INTCONbits.PEIE = 1);
-
-
-
-
-
-
-
-    SG90_Duty(duty);
-
-    while (1)
-    {
-
-        if(duty >= 4800){
-            flag = 1;
-        }
-        else if(duty <= 1000){
-            flag = 0;
-        }
-
-        if(flag == 0) duty++;
-        if(flag == 1) duty--;
-
-        SG90_Duty(duty);
-
-        printf("\r%u\n",duty);
-
-    }
-}
-void putch(char data){
-
-    EUSART_Write(data);
+    PWM11_DutyCycleSet(duty);
+    PWM11_LoadBufferSet();
 
 }

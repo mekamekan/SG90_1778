@@ -25,9 +25,9 @@
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "4 D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"50 D:\Users\hirot\Desktop\pic\SG90_1778\main.c
+"51 D:\Users\hirot\Desktop\pic\SG90_1778\main.c
 [v _main main `(v  1 e 1 0 ]
-"96
+"95
 [v _putch putch `(v  1 e 1 0 ]
 "88 D:\Users\hirot\Desktop\pic\SG90_1778\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
@@ -71,6 +71,8 @@
 [v _PWM11_LoadBufferSet PWM11_LoadBufferSet `(v  1 e 1 0 ]
 "139
 [v _PWM11_DutyCycleSet PWM11_DutyCycleSet `(v  1 e 1 0 ]
+"3 D:\Users\hirot\Desktop\pic\SG90_1778\SG90.c
+[v _SG90_Duty SG90_Duty `(v  1 e 1 0 ]
 [s S26 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
@@ -88,7 +90,7 @@
 ]
 [u S40 . 1 `S26 1 . 1 0 `S35 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES40  1 e 1 @11 ]
-[s S616 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[s S612 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSP1IF 1 0 :1:3 
@@ -98,11 +100,11 @@
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
 "658
-[s S625 . 1 `uc 1 . 1 0 :2:0 
+[s S621 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 CCPIF 1 0 :1:2 
 ]
-[u S628 . 1 `S616 1 . 1 0 `S625 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES628  1 e 1 @17 ]
+[u S624 . 1 `S612 1 . 1 0 `S621 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES624  1 e 1 @17 ]
 "1636
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
 "1698
@@ -111,7 +113,7 @@
 [v _TRISC TRISC `VEuc  1 e 1 @142 ]
 "1822
 [v _TRISE TRISE `VEuc  1 e 1 @144 ]
-[s S364 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S360 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSP1IE 1 0 :1:3 
@@ -121,12 +123,12 @@
 `uc 1 TMR1GIE 1 0 :1:7 
 ]
 "1864
-[s S373 . 1 `uc 1 . 1 0 :2:0 
+[s S369 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 CCPIE 1 0 :1:2 
 ]
-[u S376 . 1 `S364 1 . 1 0 `S373 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES376  1 e 1 @145 ]
-[s S138 . 1 `uc 1 PS 1 0 :3:0 
+[u S372 . 1 `S360 1 . 1 0 `S369 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES372  1 e 1 @145 ]
+[s S134 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 TMR0SE 1 0 :1:4 
 `uc 1 TMR0CS 1 0 :1:5 
@@ -134,15 +136,15 @@
 `uc 1 nWPUEN 1 0 :1:7 
 ]
 "2177
-[s S145 . 1 `uc 1 PS0 1 0 :1:0 
+[s S141 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 ]
-[u S152 . 1 `S138 1 . 1 0 `S145 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES152  1 e 1 @151 ]
+[u S148 . 1 `S134 1 . 1 0 `S141 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES148  1 e 1 @151 ]
 "2294
 [v _WDTCON WDTCON `VEuc  1 e 1 @153 ]
 "2353
@@ -175,7 +177,7 @@
 [v _SP1BRGH SP1BRGH `VEuc  1 e 1 @412 ]
 "4304
 [v _RC1STA RC1STA `VEuc  1 e 1 @413 ]
-[s S469 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S465 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -185,11 +187,11 @@
 `uc 1 SPEN 1 0 :1:7 
 ]
 "4330
-[u S478 . 1 `S469 1 . 1 0 ]
-[v _RC1STAbits RC1STAbits `VES478  1 e 1 @413 ]
+[u S474 . 1 `S465 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES474  1 e 1 @413 ]
 "4484
 [v _TX1STA TX1STA `VEuc  1 e 1 @414 ]
-[s S447 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S443 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -199,8 +201,8 @@
 `uc 1 CSRC 1 0 :1:7 
 ]
 "4510
-[u S456 . 1 `S447 1 . 1 0 ]
-[v _TX1STAbits TX1STAbits `VES456  1 e 1 @414 ]
+[u S452 . 1 `S443 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES452  1 e 1 @414 ]
 "4664
 [v _BAUD1CON BAUD1CON `VEuc  1 e 1 @415 ]
 "4910
@@ -251,7 +253,7 @@
 [v _PWM11TMRH PWM11TMRH `VEuc  1 e 1 @3514 ]
 "31066
 [v _PWM11CON PWM11CON `VEuc  1 e 1 @3515 ]
-[s S207 . 1 `uc 1 . 1 0 :2:0 
+[s S203 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 MODE 1 0 :2:2 
 `uc 1 POL 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
@@ -259,63 +261,63 @@
 `uc 1 EN 1 0 :1:7 
 ]
 "31099
-[s S214 . 1 `uc 1 . 1 0 :2:0 
+[s S210 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 PWM11MODE0 1 0 :1:2 
 `uc 1 PWM11MODE1 1 0 :1:3 
 ]
-[s S218 . 1 `uc 1 . 1 0 :2:0 
+[s S214 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 PWM11MODE 1 0 :2:2 
 `uc 1 PWM11POL 1 0 :1:4 
 `uc 1 PWM11OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 PWM11EN 1 0 :1:7 
 ]
-[s S225 . 1 `uc 1 . 1 0 :2:0 
+[s S221 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 MODE0 1 0 :1:2 
 `uc 1 MODE1 1 0 :1:3 
 ]
-[u S229 . 1 `S207 1 . 1 0 `S214 1 . 1 0 `S218 1 . 1 0 `S225 1 . 1 0 ]
-[v _PWM11CONbits PWM11CONbits `VES229  1 e 1 @3515 ]
+[u S225 . 1 `S203 1 . 1 0 `S210 1 . 1 0 `S214 1 . 1 0 `S221 1 . 1 0 ]
+[v _PWM11CONbits PWM11CONbits `VES225  1 e 1 @3515 ]
 "31164
 [v _PWM11INTE PWM11INTE `VEuc  1 e 1 @3516 ]
 "31290
 [v _PWM11INTF PWM11INTF `VEuc  1 e 1 @3517 ]
-[s S295 . 1 `uc 1 PRIF 1 0 :1:0 
+[s S291 . 1 `uc 1 PRIF 1 0 :1:0 
 `uc 1 DCIF 1 0 :1:1 
 `uc 1 PHIF 1 0 :1:2 
 `uc 1 OFIF 1 0 :1:3 
 ]
 "31314
-[s S300 . 1 `uc 1 PWM11PRIF 1 0 :1:0 
+[s S296 . 1 `uc 1 PWM11PRIF 1 0 :1:0 
 `uc 1 PWM11DCIF 1 0 :1:1 
 `uc 1 PWM11PHIF 1 0 :1:2 
 `uc 1 PWM11OFIF 1 0 :1:3 
 ]
-[u S305 . 1 `S295 1 . 1 0 `S300 1 . 1 0 ]
-[v _PWM11INTFbits PWM11INTFbits `VES305  1 e 1 @3517 ]
+[u S301 . 1 `S291 1 . 1 0 `S296 1 . 1 0 ]
+[v _PWM11INTFbits PWM11INTFbits `VES301  1 e 1 @3517 ]
 "31416
 [v _PWM11CLKCON PWM11CLKCON `VEuc  1 e 1 @3518 ]
 "31536
 [v _PWM11LDCON PWM11LDCON `VEuc  1 e 1 @3519 ]
-[s S257 . 1 `uc 1 LDS 1 0 :2:0 
+[s S253 . 1 `uc 1 LDS 1 0 :2:0 
 `uc 1 . 1 0 :4:2 
 `uc 1 LDT 1 0 :1:6 
 `uc 1 LDA 1 0 :1:7 
 ]
 "31563
-[s S262 . 1 `uc 1 PWM11LDS0 1 0 :1:0 
+[s S258 . 1 `uc 1 PWM11LDS0 1 0 :1:0 
 `uc 1 PWM11LDS1 1 0 :1:1 
 ]
-[s S265 . 1 `uc 1 PWM11LDS 1 0 :2:0 
+[s S261 . 1 `uc 1 PWM11LDS 1 0 :2:0 
 `uc 1 . 1 0 :4:2 
 `uc 1 PWM11LDM 1 0 :1:6 
 `uc 1 PWM11LD 1 0 :1:7 
 ]
-[s S270 . 1 `uc 1 LDS0 1 0 :1:0 
+[s S266 . 1 `uc 1 LDS0 1 0 :1:0 
 `uc 1 LDS1 1 0 :1:1 
 ]
-[u S273 . 1 `S257 1 . 1 0 `S262 1 . 1 0 `S265 1 . 1 0 `S270 1 . 1 0 ]
-[v _PWM11LDCONbits PWM11LDCONbits `VES273  1 e 1 @3519 ]
+[u S269 . 1 `S253 1 . 1 0 `S258 1 . 1 0 `S261 1 . 1 0 `S266 1 . 1 0 ]
+[v _PWM11LDCONbits PWM11LDCONbits `VES269  1 e 1 @3519 ]
 "31618
 [v _PWM11OFCON PWM11OFCON `VEuc  1 e 1 @3520 ]
 "32702
@@ -350,18 +352,18 @@
 [v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
 "69
 [v _eusartRxBuffer eusartRxBuffer `VE[8]uc  1 e 8 0 ]
-[s S351 . 1 `uc 1 perr 1 0 :1:0 
+[s S347 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "70
-[u S356 . 1 `S351 1 . 1 0 `uc 1 status 1 0 ]
-[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[8]S356  1 e 8 0 ]
+[u S352 . 1 `S347 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[8]S352  1 e 8 0 ]
 "71
 [v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
 "72
-[v _eusartRxLastError eusartRxLastError `VES356  1 e 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES352  1 e 1 0 ]
 "77
 [v _EUSART_TxDefaultInterruptHandler EUSART_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
 "78
@@ -372,14 +374,14 @@
 [v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "82
 [v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
-"50 D:\Users\hirot\Desktop\pic\SG90_1778\main.c
+"51 D:\Users\hirot\Desktop\pic\SG90_1778\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"53
-[v main@duty duty `ui  1 a 2 71 ]
 "54
+[v main@duty duty `ui  1 a 2 71 ]
+"55
 [v main@flag flag `i  1 a 2 69 ]
-"95
+"94
 } 0
 "5 D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
@@ -393,43 +395,43 @@
 "1520 D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
-[s S1001 _IO_FILE 0 ]
-[v vfprintf@fp fp `*.1S1001  1 a 1 wreg ]
+[s S1003 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.1S1003  1 a 1 wreg ]
 "1523
 [v vfprintf@cfmt cfmt `*.25uc  1 a 2 62 ]
 "1520
-[v vfprintf@fp fp `*.1S1001  1 a 1 wreg ]
+[v vfprintf@fp fp `*.1S1003  1 a 1 wreg ]
 [v vfprintf@fmt fmt `*.25DCuc  1 p 2 57 ]
 [v vfprintf@ap ap `*.4*.4v  1 p 1 59 ]
 "1525
 "1520
-[v vfprintf@fp fp `*.1S1001  1 a 1 61 ]
+[v vfprintf@fp fp `*.1S1003  1 a 1 61 ]
 "1543
 } 0
 "1007
 [v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
 {
-[s S1001 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.1S1001  1 a 1 wreg ]
-[u S1014 . 8 `o 1 ll 8 0 `uo 1 llu 8 0 `*.1v 1 vp 2 0 `d 1 f 4 0 ]
+[s S1003 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.1S1003  1 a 1 wreg ]
+[u S1016 . 8 `o 1 ll 8 0 `uo 1 llu 8 0 `*.1v 1 vp 2 0 `d 1 f 4 0 ]
 "1016
-[v vfpfcnvrt@convarg convarg `S1014  1 a 8 46 ]
+[v vfpfcnvrt@convarg convarg `S1016  1 a 8 46 ]
 "1009
 [v vfpfcnvrt@cp cp `*.25uc  1 a 2 55 ]
 "1007
-[v vfpfcnvrt@fp fp `*.1S1001  1 a 1 wreg ]
+[v vfpfcnvrt@fp fp `*.1S1003  1 a 1 wreg ]
 [v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 40 ]
 [v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 41 ]
 "1019
 "1007
-[v vfpfcnvrt@fp fp `*.1S1001  1 a 1 54 ]
+[v vfpfcnvrt@fp fp `*.1S1003  1 a 1 54 ]
 "1517
 } 0
 "894
 [v _utoa utoa `(v  1 s 1 utoa ]
 {
-[s S1001 _IO_FILE 0 ]
-[v utoa@fp fp `*.1S1001  1 a 1 wreg ]
+[s S1003 _IO_FILE 0 ]
+[v utoa@fp fp `*.1S1003  1 a 1 wreg ]
 "897
 [v utoa@n n `uo  1 a 8 30 ]
 "896
@@ -437,28 +439,28 @@
 [v utoa@p p `i  1 a 2 28 ]
 [v utoa@w w `i  1 a 2 25 ]
 "894
-[v utoa@fp fp `*.1S1001  1 a 1 wreg ]
+[v utoa@fp fp `*.1S1003  1 a 1 wreg ]
 [v utoa@d d `uo  1 p 8 16 ]
 "905
 "894
-[v utoa@fp fp `*.1S1001  1 a 1 27 ]
+[v utoa@fp fp `*.1S1003  1 a 1 27 ]
 "926
 } 0
 "133
 [v _pad pad `(v  1 s 1 pad ]
 {
-[s S1001 _IO_FILE 0 ]
-[v pad@fp fp `*.1S1001  1 a 1 wreg ]
+[s S1003 _IO_FILE 0 ]
+[v pad@fp fp `*.1S1003  1 a 1 wreg ]
 "135
 [v pad@w w `i  1 a 2 13 ]
 [v pad@i i `i  1 a 2 11 ]
 "133
-[v pad@fp fp `*.1S1001  1 a 1 wreg ]
+[v pad@fp fp `*.1S1003  1 a 1 wreg ]
 [v pad@buf buf `*.4uc  1 p 1 7 ]
 [v pad@p p `i  1 p 2 8 ]
 "145
 "133
-[v pad@fp fp `*.1S1001  1 a 1 15 ]
+[v pad@fp fp `*.1S1003  1 a 1 15 ]
 "164
 } 0
 "8 D:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
@@ -471,9 +473,9 @@
 [v fputs@c c `uc  1 a 1 4 ]
 "8
 [v fputs@s s `*.4DCuc  1 a 1 wreg ]
-[u S979 . 2 `*.1uc 1 buffer 2 0 `*.1DCuc 1 source 2 0 ]
-[s S982 _IO_FILE 10 `S979 1 . 2 0 `i 1 count 2 2 `[2]uc 1 ungetbuf 2 4 `i 1 ungetcnt 2 6 `i 1 limit 2 8 ]
-[v fputs@fp fp `*.1S982  1 p 1 0 ]
+[u S981 . 2 `*.1uc 1 buffer 2 0 `*.1DCuc 1 source 2 0 ]
+[s S984 _IO_FILE 10 `S981 1 . 2 0 `i 1 count 2 2 `[2]uc 1 ungetbuf 2 4 `i 1 ungetcnt 2 6 `i 1 limit 2 8 ]
+[v fputs@fp fp `*.1S984  1 p 1 0 ]
 "13
 [v fputs@s s `*.4DCuc  1 a 1 3 ]
 "19
@@ -482,19 +484,19 @@
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 4 ]
-[u S979 . 2 `*.1uc 1 buffer 2 0 `*.1DCuc 1 source 2 0 ]
-[s S982 _IO_FILE 10 `S979 1 . 2 0 `i 1 count 2 2 `[2]uc 1 ungetbuf 2 4 `i 1 ungetcnt 2 6 `i 1 limit 2 8 ]
-[v fputc@fp fp `*.1S982  1 p 1 6 ]
+[u S981 . 2 `*.1uc 1 buffer 2 0 `*.1DCuc 1 source 2 0 ]
+[s S984 _IO_FILE 10 `S981 1 . 2 0 `i 1 count 2 2 `[2]uc 1 ungetbuf 2 4 `i 1 ungetcnt 2 6 `i 1 limit 2 8 ]
+[v fputc@fp fp `*.1S984  1 p 1 6 ]
 "24
 } 0
-"96 D:\Users\hirot\Desktop\pic\SG90_1778\main.c
+"95 D:\Users\hirot\Desktop\pic\SG90_1778\main.c
 [v _putch putch `(v  1 e 1 0 ]
 {
 [v putch@data data `uc  1 a 1 wreg ]
 [v putch@data data `uc  1 a 1 wreg ]
-"98
+"97
 [v putch@data data `uc  1 a 1 3 ]
-"100
+"99
 } 0
 "173 D:\Users\hirot\Desktop\pic\SG90_1778\mcc_generated_files/eusart.c
 [v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
@@ -585,6 +587,12 @@
 {
 [v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
 "274
+} 0
+"3 D:\Users\hirot\Desktop\pic\SG90_1778\SG90.c
+[v _SG90_Duty SG90_Duty `(v  1 e 1 0 ]
+{
+[v SG90_Duty@duty duty `ui  1 p 2 3 ]
+"8
 } 0
 "128 D:\Users\hirot\Desktop\pic\SG90_1778\mcc_generated_files/pwm11.c
 [v _PWM11_LoadBufferSet PWM11_LoadBufferSet `(v  1 e 1 0 ]
